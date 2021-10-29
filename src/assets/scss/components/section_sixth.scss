@@ -1,0 +1,47 @@
+.container {
+    width:570px;
+    p{
+        width: 520px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #0F2336;
+    }
+    .user{
+        display:flex;
+        justify-content: space-between;
+
+        .number{
+            width: 395px;
+            height: 55px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.35);
+        }
+
+        .submit{
+            background: #00CCCC;
+            border: 1px solid #00CCCC;
+            box-sizing: border-box;
+            border-radius: 14px;
+            width: 156px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #0F2336;
+
+        }
+    }
+
+
+}
