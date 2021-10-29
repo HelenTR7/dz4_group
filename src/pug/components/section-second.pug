@@ -1,0 +1,36 @@
+.section-second
+    .container
+        .section-second_row 
+            .section-second_block 
+                img.section-second_icon(src="./assets/imgs/icon-first.jpg", alt="icon1")
+                p.section-second_title Order ahead, skip the line
+                p.section-second_subtitle Feel like a rock star when you bypass the line and save a bunch of time. 
+            .section-second_block 
+                img.section-second_icon(src="./assets/imgs/icon-sec.png", alt="icon1")
+                p.section-second_title Bonus and discounts
+                p.section-second_subtitle You can enjoy lots of discounts from the selected stores, or accumulate points.
+            .section-second_block 
+                img.section-second_icon(src="./assets/imgs/icon-third.jpg", alt="icon1")
+                p.section-second_title Share with your friends
+                p.section-second_subtitle Send gifts to your friends and family, and pick up for your coworkers when they can't get away .                
+                //- mixin section-second_block(icon, title, subtitle)
+                //-                     .section-second_row 
+                //-                         .section-second_block 
+                //-                             .section-second_icon=icon
+                //-                             .section-second_title=title
+                //-                             .section-second_subtitle=subtitle
+                //-                     +section-second_block("./assets/imgs/icon-first.jpg", "Order ahead, skip the line","Feel like a rock star when you bypass the line and save a bunch of time.")
+                //-                     +section-second_block("./assets/imgs/icon-second.jpg", "Bonus and discounts","You can enjoy lots of discounts from the selected stores, or accumulate points.")
+                //-                     +section-second_block("./assets/imgs/icon-third.jpg", "Share with your friends","Send gifts to your friends and family, and pick up for your coworkers when they can't get away .")
+
+     
+
+//- mixin f_section_item(title, date)
+//-                     .f_section_col
+//-                         .f_section_item
+//-                             .fs_item_title=title
+//-                             .fs_item_text=date
+//-                 +f_section_item("Check in", "10 Feb 2021")
+//-                 +f_section_item("Check out", "13 Feb 2021")
+//-                 +f_section_item("Person", "2 Adults 1 kid")
+//-                 
