@@ -1,29 +1,31 @@
 .section-four {
   margin-top: 100px;
   background-color: #f4f5f6;
+  font-family: Roboto sans-serif;
   .container {
-    height: 547px;
+    max-height: 547px;
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
   }
 }
 .rows {
   margin-left: 55px;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
   background-color: white;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
   border-radius: 15px;
   display: flex;
   align-items: flex-start;
   max-width: 455px;
-  box-shadow: grey;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
 }
 .row__img {
   max-width: 100%;
