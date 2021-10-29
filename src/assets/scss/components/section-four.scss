@@ -63,6 +63,12 @@
   max-width: 100%;
   transform: translate(65px, -39px);
 }
+@media (max-width: 1024px) {
+  .row__girl {
+    transform: translate(30px, -39px);
+  }
+}
+
 @media (max-width: 768px) {
   .row {
     max-width: none;
@@ -83,5 +89,13 @@
 @media (max-width: 520px) {
   .row__img {
     display: none;
+  }
+  .row2 {
+    transform: translate(10px, 0px);
+  }
+}
+@media (max-width: 425px) {
+  .row2 {
+    transform: translate(0px, 0px);
   }
 }
