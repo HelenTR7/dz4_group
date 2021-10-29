@@ -62,6 +62,7 @@ margin-top: -20px;
     &__text {
         width: 557px;
         margin-top: 140px;
+        z-index: 2;
     }
 
     &__text h1 {
@@ -96,8 +97,9 @@ margin-top: -20px;
     }
 
     &__img {
+        z-index: 1;
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 30px;
     }
 }
