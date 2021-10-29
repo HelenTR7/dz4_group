@@ -60,9 +60,10 @@ margin-top: -20px;
     background: #F5F6F7;
 
     &__text {
+        position: relative;
         width: 557px;
         margin-top: 140px;
-        z-index: inherit 2;
+        z-index: 2;
     }
 
     &__text h1 {
