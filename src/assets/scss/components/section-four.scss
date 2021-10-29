@@ -1,3 +1,63 @@
-.colum {
-  background-color: aqua;
+.section-four {
+  margin-top: 100px;
+  background-color: #f4f5f6;
+  .container {
+    height: 547px;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.row {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 455px;
+}
+.row__img {
+  max-width: 100%;
+  padding: 25px 0 0 25px;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.row__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  color: #0f2336;
+  margin-bottom: 25px;
+}
+.row__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #576d81;
+}
+.row__inf {
+  padding: 38px 31px 43px 23px;
+}
+.row1 {
+  transform: translate(0px, -70px);
+}
+.row2 {
+  transform: translate(50px, 0px);
+}
+.row3 {
+  transform: translate(0px, 70px);
+}
+.row__girl {
+  max-width: 100%;
+  transform: translate(0px, 70px);
 }
