@@ -11,7 +11,7 @@
 .section-second_row {
   display: grid;
   grid-gap: 52px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
 }
 .section-second_block {
   width: 325px;
@@ -23,7 +23,7 @@
   letter-spacing: 0.2px;
   color: #0f2336;
 }
-p.section-second_subtitle {
+.section-second_subtitle {
   font-size: 16px;
   line-height: 24px;
   color: #576d81;
