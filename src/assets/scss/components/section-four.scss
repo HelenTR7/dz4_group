@@ -20,7 +20,6 @@
 
 .row {
   background-color: white;
-  //margin-bottom: 30px;
   border-radius: 15px;
   display: flex;
   align-items: flex-start;
@@ -30,9 +29,6 @@
 .row__img {
   max-width: 100%;
   padding: 25px 0 0 25px;
-}
-.row:last-child {
-  margin-bottom: 0;
 }
 
 .row__title {
@@ -66,4 +62,26 @@
 .row__girl {
   max-width: 100%;
   transform: translate(65px, -39px);
+}
+@media (max-width: 768px) {
+  .row {
+    max-width: none;
+  }
+  .row__inf {
+    padding: 18px 11px 13px 13px;
+  }
+}
+
+@media (max-width: 520px) {
+  .rows {
+    margin-left: 5px;
+  }
+  .row__img {
+    padding: 5px 0 0 5px;
+  }
+}
+@media (max-width: 520px) {
+  .row__img {
+    display: none;
+  }
 }
