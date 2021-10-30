@@ -22,15 +22,19 @@
 .row {
   background-color: white;
   border-radius: 15px;
-  display: flex;
-  align-items: flex-start;
   max-width: 455px;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
 }
 
+.row__inf {
+  display: flex;
+  align-items: center;
+  padding: 25px 31px 25px 23px;
+}
+
 .row__img {
+  margin-right: 23px;
   max-width: 100%;
-  padding: 25px 0 0 25px;
 }
 
 .row__title {
@@ -40,19 +44,15 @@
   line-height: 1;
   letter-spacing: 0.2px;
   color: $c-text;
-  margin-bottom: 25px;
 }
 
 .row__text {
+  padding: 0 31px 43px 98px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.5;
   color: $c-text2;
-}
-
-.row__inf {
-  padding: 38px 31px 43px 23px;
 }
 
 .row1 {
@@ -73,43 +73,81 @@
 }
 
 @media (max-width: 1024px) {
+  .rows {
+    margin-left: 35px;
+  }
   .row__girl {
     transform: translate(30px, -39px);
+  }
+  .row__text {
+    padding: 0 31px 23px 38px;
   }
 }
 
 @media (max-width: $sm) {
   .rows {
-    margin-left: 35px;
+    margin-left: 25px;
   }
   .row {
     max-width: none;
   }
-  .row__img {
-    padding: 5px 0 0 5px;
-  }
   .row__inf {
-    padding: 18px 11px 13px 13px;
+    padding: 10px 21px 23px 10px;
+  }
+  .row__title {
+    font-size: 20px;
+  }
+  .row__text {
+    padding: 0 21px 23px 28px;
   }
 }
 
 @media (max-width: $xs) {
   .rows {
-    margin-left: 10px;
-  }
-  .row__img {
-    display: none;
-  }
-  .row__img {
+    margin-left: 15px;
   }
   .row2 {
     transform: translate(10px, 0px);
   }
+  .row__inf {
+    padding: 10px 10px 10px 10px;
+  }
+  .row__img {
+    margin-right: 5px;
+  }
   .row__title {
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
   }
   .row__text {
     font-size: $font-size-base;
+    padding: 0 10px 10px 10px;
+  }
+}
+@media (max-width: 425px) {
+  .rows {
+    margin-left: 5px;
+  }
+  .row__title {
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .rows {
+    margin-left: 1px;
+  }
+  .row__inf {
+    padding: 10px;
+  }
+  .row__img {
+    display: none;
+  }
+  .row__title {
+    font-size: 9px;
+  }
+  .row__text {
+    font-size: 7px;
+    padding: 0 5px 5px 5px;
   }
 }
