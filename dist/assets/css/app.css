@@ -262,14 +262,11 @@ html {
   padding: 117px 160px 97px 560px; }
 
 .section-four {
-  margin-top: 100px;
-  background-color: #f4f5f6;
-  font-family: Roboto sans-serif; }
+  margin: 300px 0 100px 0;
+  background-color: #F4F5F6;
+  font-family: "Roboto", sans-serif; }
   .section-four .container {
     max-height: 547px;
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -297,7 +294,7 @@ html {
   font-size: 25px;
   line-height: 1;
   letter-spacing: 0.2px;
-  color: #0f2336;
+  color: #0F2336;
   margin-bottom: 25px; }
 
 .row__text {
@@ -305,7 +302,7 @@ html {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.5;
-  color: #576d81; }
+  color: #576D81; }
 
 .row__inf {
   padding: 38px 31px 43px 23px; }
