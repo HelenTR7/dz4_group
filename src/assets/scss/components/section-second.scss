@@ -5,11 +5,14 @@
 .section-second_row {
   display: grid;
   grid-gap: 52px;
-  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(293px, 1fr));
 }
 
 .section-second_block {
-  width: 325px;
+  width: 293px;
+}
+.section-second_icon {
+  margin-bottom: 30px;
 }
 
 .section-second_title {
@@ -18,6 +21,7 @@
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #0f2336;
+  margin-bottom: 12px;
 }
 
 .section-second_subtitle {
