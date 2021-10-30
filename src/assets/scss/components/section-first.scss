@@ -1,3 +1,4 @@
+@import "../utils/parameters.scss";
 .header {
     position: relative;
     background: #F5F6F7;
@@ -13,7 +14,9 @@
         padding: 15px 0 0 15px;
     }
     
-    &__nav {}
+    &__nav {
+        padding-top: 20px;
+    }
 
     &__nav li {
         margin: 0 45px;
@@ -29,25 +32,23 @@
 
     &__nav a {
         text-decoration: none;
-        font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 120%;
-        color: #0F2336;
+        color: $c-text;
     }
 }
 
 .header button {
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 120%;
     color: #FFFFFF;
     padding: 16px 26px;
-    background: #0F2336;
-    border-radius: 4px;
+    background: $c-text;
+    border-radius: 8px;
     margin-top: -20px;
 }
 
@@ -62,32 +63,56 @@
     }
 
     &__text h1 {
-        font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 55px;
         line-height: 138%;
         letter-spacing: 1.11px;
-        color: #00CCCC;
+        color: $c-text;
+    }
+
+    &__text span {
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 138%;
+        letter-spacing: 1.11px;
+        color: $c-primary;
     }
 
     &__text2 {
-        margin-top: -60px;
     }
 
     &__text p {
-        font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 55px;
         line-height: 138%;
         letter-spacing: 1.11px;
-        color: #0F2336;
+        color: $c-text;
     }
 
-    &__button {}
+    &__button {
+        margin-top: 40px;
+    }
+    &__button button {
+        display: flex;
+        background: $c-primary;
+        border: 1px solid $c-primary;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
+        border-radius: 14px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 120%;
+        color: $c-text;
+    }
 
-    &__button button {}
+    &__button img {
+        margin-left: 15px;
+    }
 
     &__img {
         z-index: 1;
@@ -95,4 +120,69 @@
         bottom: 0;
         right: 30px;
     }
+}
+
+@media (max-width:$lg) {
+    .header__nav {
+        display: none;
+    }
+    .header__burger {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        position: relative;
+    }
+    .header__burger > span,
+    .header__burger > span::before,
+    .header__burger > span::after {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $c-text;
+    }   
+    .header__burger > span::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0px;
+    }
+    .header__burger > span::after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 0px;
+    }
+    .header__logo {
+        text-align: center;
+    }
+    .one__img img {
+        opacity: 50%;
+    }
+    .one__button {
+        margin-left: 50px;
+    }
+}
+@media (max-width: $md) {
+    .one__text {
+        text-align: center;
+    }
+    .one__button {
+        margin-left: 150px;
+    }
+    .one__button img {
+        transform: rotate(100grad);
+    }
+    .header__burger {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 25px;
+        right:250px;
+        width: 35px;
+        height: 35px;
+    }
+
+
 }
