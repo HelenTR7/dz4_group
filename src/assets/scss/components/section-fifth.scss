@@ -1,36 +1,71 @@
 @import "../utils/parameters";
+
  
 .section-fifth {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: rebeccapurple;
+  background-color: $c-secondary;
   width: 100%;
-  max-height: 540px;
   border-radius: 50px;
+  margin: 160px auto;
 
-  &__content {}
+
+  &__content {
+    position: relative;
+  }
 
   &__title {
-    position: relative;
-    top: 130px;
-    max-width: 300px;
+    position: relative; 
+    max-width: 440px;
     display: flex;
     flex-direction: column;
-    padding-left: 140px;
+    padding:80px 0px 80px 20%;
     height: 100%;
   }
 
   span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
     padding: 20px 0;
+    color: c-text2;
   }
+  
 
-  h2 {
+  .hdg {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
     margin: 0;
+    color: $c-text;
   }
 
-  &__imgs img{
-      position: absolute;
-      right: 70px;
+  &__imgs {
+    position: absolute;
+    right: 0;
+  }
+
+  .phone-img {
+    position: relative;
+    z-index: 5;
+    padding: 0px 140px 0px 100px;
+  }
+
+  .blueberry-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+  }
+
+  .cocktail-img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) ;
   }
 }

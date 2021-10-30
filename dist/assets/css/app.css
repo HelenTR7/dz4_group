@@ -352,26 +352,51 @@ html {
 .section-fifth {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: rebeccapurple;
+  background-color: #F4F5F6;
   width: 100%;
-  max-height: 540px;
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin: 160px auto; }
+  .section-fifth__content {
+    position: relative; }
   .section-fifth__title {
     position: relative;
-    top: 130px;
-    max-width: 300px;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
-    padding-left: 140px;
+    padding: 80px 0px 80px 20%;
     height: 100%; }
   .section-fifth span {
-    padding: 20px 0; }
-  .section-fifth h2 {
-    margin: 0; }
-  .section-fifth__imgs img {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0;
+    color: c-text2; }
+  .section-fifth .hdg {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0;
+    color: #0F2336; }
+  .section-fifth__imgs {
     position: absolute;
-    right: 70px; }
+    right: 0; }
+  .section-fifth .phone-img {
+    position: relative;
+    z-index: 5;
+    padding: 0px 140px 0px 100px; }
+  .section-fifth .blueberry-img {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .section-fifth .cocktail-img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
 
 .section-sixth .container {
   width: 570px; }
