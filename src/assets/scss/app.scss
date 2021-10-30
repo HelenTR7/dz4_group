@@ -4,8 +4,13 @@
 
 //Общее
 //@import 'main/stylesheet';// шрифты
-//@import 'main/reset'; // сброс стилей для кроссбраузерности
-//@import 'main/common'; // общие стили
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+@import 'main/common'; // общие стили
 
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
-@import 'components/header';
+@import 'components/section-first';
+@import 'components/section-second';
+@import 'components/section-third';
+@import 'components/section-fourth';
+@import 'components/section-fifth';
+@import 'components/section-sixth';

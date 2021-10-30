@@ -1,7 +1,4 @@
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
+@import "../utils/parameters";
  
 .section-fifth {
   position: relative;
@@ -11,12 +8,8 @@
   width: 100%;
   max-height: 540px;
   border-radius: 50px;
-  
-  
 
-  &__content {
-  
-  }
+  &__content {}
 
   &__title {
     position: relative;
@@ -29,19 +22,15 @@
   }
 
   span {
-    padding: 20px 0px;
+    padding: 20px 0;
   }
 
   h2 {
-    margin: 0px;
+    margin: 0;
   }
-
 
   &__imgs img{
       position: absolute;
       right: 70px;
-      
-    
   }
-  
 }

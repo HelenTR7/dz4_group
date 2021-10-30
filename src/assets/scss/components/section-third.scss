@@ -1,58 +1,60 @@
-.section-third{
+.section-third {
     margin-top: 100px;
 }
-.container{
-    box-sizing: border-box;
-    max-width:1170px;
-    padding: 0 15px;
-    margin:0 auto;
-}
+
 .section-third__components  {
     display: flex;
-    
     background: #F4F5F6;
     border-radius: 50px;
 }
-.section-third__title{
+
+.section-third__title {
     font-size: 18px;
     line-height: 18px;
     color: #576D81;
 }
-.section-third__main-text{
+
+.section-third__main-text {
     font-weight: 900;
     font-size: 40px;
     line-height: 55px;
     color: #0F2336;
 }
-.section-third__text{
+
+.section-third__text {
     font-size: 16px;
     line-height: 24px;
     color: #576D81;
 }
-.section-third__img{
+
+.section-third__img {
     position: relative;
 }
-.phone{
+
+.phone {
     display: block;
     position: absolute;
     top:-63px;
     left:163px;
     z-index:2;
 }
-.crisps{
+
+.crisps {
     display: block;
     position: absolute;
     bottom: -45px;
     left:384px;
     z-index:3;
 }
-.glass{
+
+.glass {
     display: block;
     position: absolute;
     bottom: 102px;
     left:27px;
     z-index:1;
 }
-.section-third__text-block{
+
+.section-third__text-block {
     padding: 117px 160px 97px 560px;
 }
