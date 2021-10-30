@@ -1,60 +1,128 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
 .section-third {
     margin-top: 100px;
+    box-sizing: border-box;
 }
 
 .section-third__components  {
     display: flex;
-    background: #F4F5F6;
+    background: $c-secondary;
     border-radius: 50px;
 }
 
 .section-third__title {
     font-size: 18px;
     line-height: 18px;
-    color: #576D81;
+    color: $c-text2;
+    margin-bottom: 21px;
 }
 
 .section-third__main-text {
     font-weight: 900;
     font-size: 40px;
     line-height: 55px;
-    color: #0F2336;
+    color: $c-text;
+    margin-bottom: 21px;
 }
 
 .section-third__text {
     font-size: 16px;
     line-height: 24px;
-    color: #576D81;
+    color: $c-text2;
+    
 }
 
 .section-third__img {
-    position: relative;
+    position: relative; 
+    margin-left: 13.33%;
+    margin-top: -63px;
+    margin-bottom: -45px;
+    max-width: 28.16%;
 }
 
 .phone {
+    max-width: 100%;
     display: block;
-    position: absolute;
-    top:-63px;
-    left:163px;
+    position: relative;
     z-index:2;
 }
 
 .crisps {
     display: block;
     position: absolute;
-    bottom: -45px;
-    left:384px;
+    bottom:-8px;
+    right:-134px;
     z-index:3;
 }
 
 .glass {
     display: block;
     position: absolute;
-    bottom: 102px;
-    left:27px;
+    top:165px;
+    left:-125px;
     z-index:1;
 }
 
 .section-third__text-block {
-    padding: 117px 160px 97px 560px;
+    padding: 117px 160px 97px 87px;
+    max-width: 58.5%;
+    
+}
+@media screen and (max-width:991.75px){
+    .section-third__text-block {
+        padding: 117px 130px 97px 87px;
+    }
+}
+@media screen and (max-width:767.75px){
+    .section-third__text-block {
+        padding: 70px 50px 60px 40px;
+    }
+    .crisps{
+        max-width: 150px;
+        bottom:30px;
+        right:-70px;
+    }
+    .glass {
+        max-width: 130px;
+        top:70px;
+        left:-85px;
+        z-index:1;
+    }
+        .section-third__title {
+            font-size: 16px;
+            line-height: 16px;
+            color: $c-text2;
+            margin-bottom: 21px;
+        }
+        
+        .section-third__main-text {
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 40px;
+            color: $c-text;
+            margin-bottom: 21px;
+        }
+        
+        .section-third__text {
+            font-size: 14px;
+            line-height: 20px;
+            color: $c-text2;
+}}
+@media screen and (max-width:575.75px){
+    .section-third__img{
+        display: block;
+        align-self: center;
+    }
+    .crisps{
+        max-width: 130px;
+        bottom:-4px;
+        right:-40px;
+}
+.glass {
+    max-width: 100px;
+    top:45px;
+    left:-65px;
+    z-index:1;}
 }
